@@ -1,6 +1,6 @@
 {
   "name": "mark-tested-specs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Add comments in your tests and check your md specs",
   "author": "Gabriel Gregorio da Silva",
   "repository": {

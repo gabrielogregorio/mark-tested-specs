@@ -22,3 +22,6 @@ export const fileContainsMarker = (marker: string, fileString: string): boolean 
 
 export const replaceSpecMarkerWithSuccess = (marker: string, originalItem: string): string =>
   originalItem.replace(new RegExp(`\\[(❌|✅|)\\]\\(#${marker}#\\)`, 'g'), `[✅](#${marker}#)`);
+
+export const replaceSpecMarkerWithError = (marker: string, originalItem: string): string =>
+  originalItem.replace(new RegExp(`\\[(❌|✅|)\\]\\(#${marker}#\\)`, 'g'), `[❌](#${marker}#)`);

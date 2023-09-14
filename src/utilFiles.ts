@@ -12,10 +12,10 @@ export const readDirectoryRecursivelyAndExtractText = (dir: string, filesList: s
     const filePath = pathNode.join(dir, file);
 
     if (fsNode.statSync(filePath).isDirectory()) {
-      if (file !== 'build' && file !== 'node_modules') {
+      if (file !== 'build' && file !== 'dist' && file !== 'node_modules') {
         readDirectoryRecursivelyAndExtractText(filePath, filesList);
       }
-    } else if (filePath.endsWith('.tsx') || filePath.endsWith('.ts')) {
+    } else if (!filePath.endsWith('.exe') && !filePath.endsWith('.png')) {
       filesList.push(readFileSync(filePath));
     }
   });

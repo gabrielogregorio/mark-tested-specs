@@ -4,7 +4,6 @@
 
 ![NPM package](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![Testing-Library](https://img.shields.io/badge/-TestingLibrary-%23E33332?style=for-the-badge&logo=testing-library&logoColor=white)
 ![Eslint](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white)
 ![Prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)
 
@@ -72,6 +71,23 @@ And to make a mark updated, simply write `test #any-mark-name#` in one of your f
 it('should test #any-mark-name#', () => {
   // blah blah blah
 });
+```
+
+After running the command with "npm run update:marks" that we defined in package.json, all markers found with "test #any-mark-name#" will be marked as ✅, example:
+
+```md
+### Var
+
+'Var' is test
+
+update me [✅](#any-mark-name#)
+
+| Name     | Type                  |                         |
+| -------- | --------------------- | ----------------------- |
+| text     | String                | [](#any-mark-name#)     |
+| location | [Location](#location) | [✅](#any-mark-name#)   |
+| location | [Location](#location) | [✅](#any-mark-name#)   |
+| location | [Location](#location) | [❌](#any-mark-name-2#) |
 ```
 
 5. You can use this however you want, but by giving a suggestion, you can integrate this at the end of your tests

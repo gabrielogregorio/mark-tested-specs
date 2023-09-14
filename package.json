@@ -1,6 +1,6 @@
 {
   "name": "mark-tested-specs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Add comments in your tests and check your md specs",
   "author": "Gabriel Gregorio da Silva",
   "repository": {
@@ -32,7 +32,7 @@
     "publish-npm": "npm run jest && rm -rf ./build && npm run build && npm publish",
     "prepare": "husky install",
     "check": "tsc --noEmit",
-    "lint": "eslint -c ./.eslintrc.json --ext '.ts' 'src/**'",
+    "lint": "eslint -c ./.eslintrc.js --ext '.ts' 'src/**'",
     "format": "prettier src/* --write"
   },
   "engines": {

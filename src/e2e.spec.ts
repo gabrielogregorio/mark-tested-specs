@@ -10,6 +10,7 @@ const originalTextFile = `### Var
 | text     | String                | [❌](#var#)    |
 | location | [Location](#location) | [❌](#var#)    |
 | location | [Location](#location) | [❌](#item-2#) |
+| location | [Location](#location) | [✅](#item-10#) |
 `;
 
 const expectedTextFile = `### Var
@@ -21,6 +22,7 @@ const expectedTextFile = `### Var
 | text     | String                | [✅](#var#)    |
 | location | [Location](#location) | [✅](#var#)    |
 | location | [Location](#location) | [❌](#item-2#) |
+| location | [Location](#location) | [❌](#item-10#) |
 `;
 
 const folderExampleMd = './src/example.md';

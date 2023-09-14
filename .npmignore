@@ -19,4 +19,4 @@ babel.config.js
 src
 docs
 extra
-
+.eslintrc.js

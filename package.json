@@ -1,6 +1,6 @@
 {
   "name": "mark-tested-specs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Add comments in your tests and check your md specs",
   "author": "Gabriel Gregorio da Silva",
   "repository": {
@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/gabrielogregorio/mark-tested-specs#readme",
   "main": "./dist/index.js",
+  "bin": {
+    "mark-tested-specs": "./dist/index.js"
+  },
   "scripts": {
     "build": "tsc && tsc-alias",
     "start": "node dist/index.js",
